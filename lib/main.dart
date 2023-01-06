@@ -1,3 +1,4 @@
+import 'package:dev_fest_repo/constants.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +17,22 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
 
       ),
-      home: ,
+      home: homepage(),
+    );
+  }
+}
+class homepage extends StatefulWidget {
+  const homepage({Key? key}) : super(key: key);
+
+  @override
+  _homepageState createState() => _homepageState();
+}
+
+class _homepageState extends State<homepage> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: kDar3,
     );
   }
 }
